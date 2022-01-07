@@ -6,12 +6,11 @@
 
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam;'>
-		
-		<a-marker preset='hiro'><a-entity gltf-model-next="src:3d models/testing prism1.glb"
-							 >
-			</a-entity>
-		
-		</a-marker>
+		<a-assets>
+			<a-asset-item id="signpost" src="3d models/testing prism1.glb"></asset-item>
+		</assets>
+		<a-entity gltf-model="#signpost" modify-materials></a-entity>
+		<a-marker preset='hiro'></a-marker>
 		<a-entity camera></a-entity>
 	</a-scene>
 </body>
