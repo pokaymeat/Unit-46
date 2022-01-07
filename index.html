@@ -5,12 +5,11 @@
 <!--the new srcipt src is what is required to make the website compatible with gltf2.0 files, it would work normally with 1.o files-->
 
 <body style='margin : 0px; overflow: hidden;'>
-	<a-scene embedded arjs='sourceType: webcam;'>
+	<a-scene>
 		<a-assets>
 			<a-asset-item id="signpost" src="3d models/testing prism1.glb"></asset-item>
 		</assets>
 		<a-entity gltf-model="#signpost" modify-materials></a-entity>
-		<a-marker preset='hiro'></a-marker>
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
 </body>
