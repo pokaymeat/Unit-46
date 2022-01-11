@@ -4,7 +4,10 @@
 
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam;'>
-		<a-box position='0 0.5 0.5' material='opacity: 1;'></a-box>
+		<a-assets>
+			<a-assets-item id="signpost" src="3d models/testing prism1.glb"></a-assets-item>
+			<a-entity gltf-model="#signpost" modify-materials></a-entity>
+		</a-assets>
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
 </body>
